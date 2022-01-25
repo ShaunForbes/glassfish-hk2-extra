@@ -35,6 +35,7 @@ public class Activator implements BundleActivator {
     }
 
     public void stop(BundleContext context) throws Exception {
+        ResourceFinder.reset();
         ServiceLoader.reset();
     }
 
